@@ -1,0 +1,511 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* navigation pointer */
+
+.clearFix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.page {
+    position: relative;
+    width: calc(100% - 214px);
+    height: 100vh;
+    float: left;
+}
+
+.pointer {
+    position: absolute;
+    right: -45px;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    z-index: 3;
+}
+
+.pointer>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* side menu */
+/* .mainMenu {
+    width: 214px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+} */
+.mainMenu {
+    color: #272125;
+    float: left;
+    width: 214px;
+    text-align: center;
+}
+
+.rect {
+    background-color: #272125;
+    background-image: url("assets/logo/png/logo.png");
+    background-position: -2px 20px;
+    background-repeat: no-repeat;
+    width: 214px;
+    height: 214px;
+
+}
+
+li {
+    list-style: none;
+}
+
+.links {
+    font-family: "lato", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: 110px;
+}
+
+.links li {
+    margin-top: 30px;
+}
+
+.links li.active {
+    color: #EC2D6D;
+}
+
+.daysLeft {
+    margin-top: 70px;
+    font-weight: 700;
+}
+
+.daysLeft>h1 {
+    font-family: 'BebasNeueBold';
+    font-size: 100px;
+}
+
+.daysLeft>div {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Lato;
+    line-height: 17px;
+}
+
+.social {
+    margin-top: 30px;
+    font-size: 0;
+    height: 30px;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid rgba(39, 33, 37, 0.2);
+    border-bottom: 2px solid rgba(39, 33, 37, 0.2);
+    padding-top: 15px;
+
+
+}
+
+.social>li {
+    line-height: 30px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.foot {
+    margin-top: 10px;
+    color: #272125;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+
+}
+
+.foot>span {
+    color: #EC2D6D;
+}
+
+/* section home */
+.home {
+    background-image: url("assets/Bitmap_1/png/Bitmap.png");
+    background-position: -13px, -17px;
+
+}
+
+.pointer.basket {
+    background-color: #1B509F;
+    top: 290px;
+}
+
+.message {
+    background-image: url("assets/message/untitled.svg");
+    background-origin: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 656px;
+    height: 410px;
+    left: 300px;
+    top: 60px;
+}
+
+.hiDribbblers {
+    color: #272125;
+    font-family: BebasNeueBold;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120px;
+    text-align: center;
+}
+
+.rzeszowMeetup {
+    color: #272125;
+    font-family: BebasNeueBold;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 82px;
+    text-align: center;
+}
+
+.eventData {
+    background-color: #272125;
+    font-family: BebasNeueBold;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: center;
+    width: 540px;
+    height: 88px;
+}
+
+.eventData>p {
+    color: #E3DAD3;
+    transform: translateY(-15px)
+}
+
+.eventData>p>span {
+    color: #EE2F6E;
+}
+
+/* section schedule */
+.schedule {
+    background-color: #E3DAD3;
+}
+
+.pointer.schedule {
+    background-color: #E3DAD3;
+    top: 350px;
+}
+
+.actualSchedule {
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
+    border: 2px solid #272125;
+    width: 55%;
+    height: 80%;
+}
+
+.actualSchedule>ul {
+    display: block;
+    position: relative;
+    top: 112px;
+    left: 104px;
+}
+
+.actualSchedule>ul>li {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    width: 80%;
+    color: #272125;
+    font-family: Lato;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 90px;
+    text-align: left;
+}
+
+.actualSchedule>ul>li:nth-of-type(even) {
+    width: 90%;
+}
+
+.actualSchedule>ul>li>div>span {
+    color: #EC2D6D;
+
+}
+
+.schedulePosition {
+    display: block;
+    margin-right: 30px;
+}
+
+.comas {
+    display: inline-block;
+    flex-grow: 1;
+    height: 0;
+    border-bottom: 2px dashed #000000;
+    transform: translateY(45px)
+}
+
+.scheduleHour {
+    font-family: BebasNeueBold;
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+}
+
+.actualSchedule>ul>li>.scheduleHour>span {
+    font-size: 90px;
+}
+
+/* 
+page speakers */
+.speakers {
+    background-color: #E694C0;
+}
+
+.pointer.speakers {
+    background-color: #E694C0;
+    top: 410px;
+}
+
+.girl {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+}
+
+.girl>img {
+    display: block;
+    width: 90%;
+
+
+}
+
+.boy {
+    position: absolute;
+    left: 55%;
+    top: 10%;
+}
+
+.boy>img {
+    display: block;
+    width: 90%;
+}
+
+.girlName {
+    position: absolute;
+    top: 30px;
+    left: -160px;
+    color: #272125;
+    font-family: BebasNeueBold;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: left;
+}
+
+.girlName>.name {
+    font-size: 80px;
+}
+
+.girlName>.number {
+    margin-top: 30px;
+    font-size: 180px;
+}
+
+.girlName>.work {
+    margin-top: 30px;
+    font-family: Lato;
+    width: 160px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+.boyName {
+    position: absolute;
+    bottom: 30px;
+    right: -160px;
+    color: #FFFFFF;
+    font-family: BebasNeueBold;
+    font-weight: 700;
+    line-height: 96px;
+    text-align: right;
+}
+
+.boyName>.name {
+    font-size: 80px;
+}
+
+.boyName>.number {
+    margin-bottom: 30px;
+    font-size: 180px;
+}
+
+.boyName>.work {
+
+    margin-bottom: 30px;
+    font-family: Lato;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+/* page location */
+
+
+.page.location {
+    position: relative;
+    background-color: #1B509F;
+    background-image: url("assets/bg/svg/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pointer.location {
+    position: absolute;
+    background-color: #1B509F;
+    top: 470px;
+
+}
+
+.location.tail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 30vw;
+    height: 30vw;
+    background-color: #272125;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.location.tail>div {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border: 2px solid #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+
+.location.tail>div>p:nth-child(1) {
+    line-height: 150px;
+    font-family: BebasNeueBold;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.location.tail>div>p:nth-child(2) {
+    line-height: 40px;
+    font-family: lato;
+}
+
+.location.tail>div>p:nth-child(3) {
+
+    margin-top: 30px;
+    font-family: lato;
+}
+
+.location.tail>div>p:nth-child(4) {
+    font-family: BebasNeueBold;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #EE2F6E;
+    line-height: 150px;
+}
+
+
+.location.place {
+    position: absolute;
+    color: #ffffff;
+    font-family: lato, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.location.place.monument {
+    top: 480px;
+    left: 40px;
+}
+
+.location.place.monument>.label {
+    position: absolute;
+    left: 150%;
+    bottom: 0;
+    text-align: left;
+}
+
+.location.place.train {
+    top: 60px;
+    left: 830px;
+}
+
+.location.place.train>.label {
+    position: absolute;
+    left: 120%;
+    bottom: 0;
+    text-align: left;
+}
+
+.location.place.ball {
+    top: 270px;
+    left: 1220px;
+}
+
+.location.place.ball>.label {
+    position: absolute;
+    left: 0;
+    bottom: 110%;
+    text-align: left;
+}
+
+.location.place.bridge {
+    top: 400px;
+    left: 320px;
+}
+
+.location.place.bridge>.label {
+    position: absolute;
+    width: 130px;
+    left: 0%;
+    bottom: 110%;
+    text-align: left;
+}
